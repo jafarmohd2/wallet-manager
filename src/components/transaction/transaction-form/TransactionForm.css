@@ -1,0 +1,67 @@
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #00000080;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px #0003;
+  width: 100%;
+  margin: 0 20%;
+}
+
+.dialog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  color: #000;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.dialog-body {
+  margin-bottom: 15px;
+}
+
+.dialog-body div {
+  margin-bottom: 10px;
+}
+
+.transaction-form .form-container {
+  padding: 30px 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px #0000001a;
+}
+
+.transaction-form .form-field {
+  margin-top: 15px;
+}
+
+.transaction-form .required {
+  color: red;
+  margin-left: 4px;
+}
+
+.transaction-form label {
+  display: block;
+}
+
+.transaction-form input {
+  width: 98%;
+}
