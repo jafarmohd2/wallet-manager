@@ -1,4 +1,10 @@
-const TransactionTotals = ({ totalIncome, totalExpenditure }) => {
+import React from "react";
+import { TransactionSummary } from "interfaces";
+
+const TransactionTotals = ({
+  totalIncome,
+  totalExpenditure,
+}: TransactionSummary) => {
   return (
     <div className="transaction-totals">
       <table>

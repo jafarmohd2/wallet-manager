@@ -1,6 +1,13 @@
-import { exportToCSV } from '../../../utils/csvExport';
+import React from "react";
+import { Transaction } from "interfaces";
+import { exportToCSV } from "utils/csvExport";
 
-const TransactionExport = ({ transactions }) => {
+// Define the props interface
+interface TransactionExportProps {
+  transactions: Transaction[];
+}
+
+const TransactionExport = ({ transactions }: TransactionExportProps) => {
   return (
     <>
       <div className="transaction-export right">

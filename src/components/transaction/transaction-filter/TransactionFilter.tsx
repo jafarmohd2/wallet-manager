@@ -1,6 +1,16 @@
-import './TransactionFilter.css';
+import React from "react";
+import "./TransactionFilter.css";
 
-const TransactionFilter = ({ monthYear, setMonthYear }) => {
+// Define the props interface
+interface TransactionFilterProps {
+  monthYear: string;
+  setMonthYear: (value: string) => void;
+}
+
+const TransactionFilter = ({
+  monthYear,
+  setMonthYear,
+}: TransactionFilterProps) => {
   return (
     <>
       <div className="transaction-filter right">

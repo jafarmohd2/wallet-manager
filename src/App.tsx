@@ -1,5 +1,5 @@
-import './App.css';
-import WalletManager from './components/WalletManager';
+import React from "react";
+import WalletManager from "components/WalletManager";
 
 const App = () => {
   return (

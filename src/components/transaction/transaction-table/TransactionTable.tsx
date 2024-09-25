@@ -1,6 +1,14 @@
-const TransactionTable = ({ transactions }) => {
+import React from "react";
+import { Transaction } from "interfaces/types";
+
+// Define the props interface
+interface TransactionTableProps {
+  transactions: Transaction[];
+}
+
+const TransactionTable = ({ transactions }: TransactionTableProps) => {
   return (
-    <div className="clear">
+    <div className="transaction-table clear">
       <table>
         <thead>
           <tr>
@@ -10,15 +18,15 @@ const TransactionTable = ({ transactions }) => {
           </tr>
         </thead>
         <tbody>
-          {transactions.length > 0 &&
+          {transactions.length > 0 ? (
             transactions.map((transaction, index) => (
               <tr key={index}>
                 <td>{transaction.date}</td>
                 <td>{transaction.amount}</td>
                 <td>{transaction.content}</td>
               </tr>
-            ))}
-          {transactions.length === 0 && (
+            ))
+          ) : (
             <tr>
               <td colSpan={3}>No transaction</td>
             </tr>
